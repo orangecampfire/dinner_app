@@ -1,6 +1,6 @@
-# flutter_application_1
+# dinner ideas app
 
-A new Flutter project.
+A new Flutter project. My first, in fact.
 
 ## Getting Started
 
