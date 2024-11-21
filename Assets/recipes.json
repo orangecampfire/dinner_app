@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Spaghetti Bolognese",
+    "ingredients": [
+      "200g spaghetti",
+      "100g ground beef",
+      "1 onion, diced",
+      "2 cloves garlic, minced",
+      "1 can crushed tomatoes",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Boil spaghetti according to package instructions.",
+      "In a pan, sauté onion and garlic until fragrant.",
+      "Add ground beef and cook until browned.",
+      "Stir in crushed tomatoes, season with salt and pepper.",
+      "Simmer for 10-15 minutes, then serve over spaghetti."
+    ]
+  },
+  {
+    "name": "Grilled Cheese Sandwich",
+    "ingredients": [
+      "2 slices of bread",
+      "2 slices of cheese",
+      "Butter"
+    ],
+    "instructions": [
+      "Spread butter on one side of each bread slice.",
+      "Place a slice of cheese between the bread slices, buttered sides facing out.",
+      "Cook in a pan on medium heat until golden brown on both sides."
+    ]
+  }
+]
