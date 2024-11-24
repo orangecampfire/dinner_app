@@ -29,5 +29,270 @@
       "Place a slice of cheese between the bread slices, buttered sides facing out.",
       "Cook in a pan on medium heat until golden brown on both sides."
     ]
-  }
-]
+  },
+  {
+    "name": "Tater Tot Casserole",
+    "ingredients": [
+      "3/4 to 1 pound ground beef or turkey",
+      "1 small onion, chopped",
+      "Salt and pepper to taste",
+      "1 package (16 ounces) frozen Tater Tots",
+      "1 can (10-3/4 ounces) condensed cream of mushroom soup,        undiluted",
+      "2/3 cup 2% milk or water",
+      "1 cup shredded cheddar cheese"
+      ],
+      "instructions": [
+        "Preheat oven to 350°.",
+        "In a large skillet, cook beef and onion over medium heat until meat is no longer pink; drain.",
+        "Season with salt and pepper.",
+        "Transfer to a greased 2-qt. baking dish.",
+        "Top with Tater Tots.",
+        "Combine soup and milk; pour over potatoes.",
+        "Sprinkle with cheese.",
+        "Bake, uncovered, 30-40 minutes or until heated through."
+      ]
+    },
+    {
+        "name": "Chimichanga",
+        "ingredients": [
+          "1/4 cup bacon grease or olive oil",
+          "2 cups shredded cooked beef, pork or chicken",
+          "1 medium onion, diced",
+          "2 garlic cloves, minced",
+          "2 medium tomatoes, chopped",
+          "2 cans (4 ounces each) chopped green chiles",
+          "1 large peeled boiled potato, diced",
+          "1 teaspoon salt",
+          "1-1/2 teaspoons dried oregano",
+          "1 teaspoon chili powder",
+          "2 tablespoons minced fresh cilantro",
+          "12 flour tortillas (12 inches), warmed",
+          "Oil for frying",
+          "Optional toppings: Shredded cheddar cheese, sour cream, guacamole, salsa, shredded lettuce, chopped tomatoes, sliced ripe olives"
+        ],
+        "instructions": [
+          "In a large skillet, heat bacon grease over medium heat.",
+          "Add beef, onion, garlic, tomato, chilies, and potato.",
+          "Stir in salt, oregano, chili powder, and cilantro.",
+          "Simmer until liquid has reduced, 2-3 minutes.",
+          "To assemble, place 1/2 cup off-center on each tortilla.",
+          "Fold up edge nearest filling; fold in both sides and roll up. If needed, secure with a toothpick.",
+          "In an electric skillet or deep-fat fryer, heat oil to 375°.",
+          "Cook chimichangas until golden brown, turning to cook all sides.",
+          "Drain on paper towels.",
+          "Serve with toppings of your choice."
+        ]
+      },
+      
+      {
+          "name": "Spaghetti Carbonara",
+          "ingredients": [
+            "200g spaghetti",
+            "100g pancetta",
+            "2 large eggs",
+            "50g Parmesan cheese",
+            "50g Pecorino cheese",
+            "Black pepper",
+            "Salt"
+          ],
+          "instructions": [
+            "Boil spaghetti according to package instructions.",
+            "In a frying pan, cook pancetta until crispy.",
+            "In a bowl, whisk together eggs, Parmesan, Pecorino, and pepper.",
+            "Drain the spaghetti, saving a little cooking water.",
+            "Toss the pasta with pancetta and egg mixture, adding pasta water as needed.",
+            "Serve with extra Parmesan and black pepper."
+          ]
+        },
+        {
+          "name": "Chicken Caesar Salad",
+          "ingredients": [
+            "2 chicken breasts",
+            "1 tbsp olive oil",
+            "1 tsp garlic powder",
+            "1 tsp paprika",
+            "1 tsp salt",
+            "1 tsp black pepper",
+            "4 cups Romaine lettuce",
+            "1/2 cup Caesar dressing",
+            "Croutons",
+            "Grated Parmesan"
+          ],
+          "instructions": [
+            "Preheat the grill or pan.",
+            "Season chicken breasts with olive oil, garlic powder, paprika, salt, and pepper.",
+            "Grill or pan-fry the chicken until cooked through.",
+            "Slice chicken and toss with lettuce, Caesar dressing, and croutons.",
+            "Top with grated Parmesan and serve."
+          ]
+        },
+        {
+          "name": "Vegetable Stir-Fry",
+          "ingredients": [
+            "1 tbsp olive oil",
+            "1 onion, sliced",
+            "1 bell pepper, sliced",
+            "1 zucchini, sliced",
+            "1 carrot, julienned",
+            "1 cup broccoli florets",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "1 tbsp honey",
+            "Sesame seeds (optional)"
+          ],
+          "instructions": [
+            "Heat olive oil in a large pan or wok.",
+            "Add onions and cook until soft.",
+            "Add the bell pepper, zucchini, carrot, and broccoli and cook for 5-7 minutes.",
+            "Mix together soy sauce, sesame oil, and honey, and pour over vegetables.",
+            "Stir to coat and cook for another 2 minutes.",
+            "Serve with sesame seeds if desired."
+          ]
+        },
+        {
+          "name": "Chicken Tacos",
+          "ingredients": [
+            "2 chicken breasts, cooked and shredded",
+            "1 tbsp olive oil",
+            "1 tbsp taco seasoning",
+            "8 small tortillas",
+            "1/2 cup shredded lettuce",
+            "1/2 cup diced tomatoes",
+            "1/2 cup shredded cheese",
+            "Sour cream",
+            "Salsa"
+          ],
+          "instructions": [
+            "In a pan, heat olive oil and add shredded chicken with taco seasoning.",
+            "Cook for 5 minutes, stirring to coat the chicken.",
+            "Warm tortillas in the microwave or on a pan.",
+            "Assemble tacos with seasoned chicken, lettuce, tomatoes, cheese, sour cream, and salsa."
+          ]
+        },
+        {
+          "name": "Beef Stroganoff",
+          "ingredients": [
+            "500g beef strips",
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 cup sour cream",
+            "1/2 cup beef broth",
+            "2 tbsp flour",
+            "1 tbsp mustard",
+            "1 tbsp butter",
+            "1 tbsp olive oil",
+            "Salt and pepper",
+            "Egg noodles"
+          ],
+          "instructions": [
+            "Heat olive oil and butter in a pan.",
+            "Cook beef strips until browned, then set aside.",
+            "In the same pan, sauté onions and garlic.",
+            "Sprinkle flour over onions and garlic, and stir to make a roux.",
+            "Add beef broth and bring to a simmer.",
+            "Stir in sour cream, mustard, salt, and pepper.",
+            "Return beef to the pan and cook for 5 minutes.",
+            "Serve with cooked egg noodles."
+          ]
+        },
+        {
+          "name": "Vegetarian Chili",
+          "ingredients": [
+            "1 onion, chopped",
+            "2 cloves garlic, minced",
+            "1 can kidney beans",
+            "1 can black beans",
+            "1 can diced tomatoes",
+            "1 cup corn kernels",
+            "1 tbsp chili powder",
+            "1 tsp cumin",
+            "Salt and pepper",
+            "1 tbsp olive oil"
+          ],
+          "instructions": [
+            "Heat olive oil in a pot and sauté onions and garlic.",
+            "Add chili powder and cumin, and cook for 1 minute.",
+            "Add beans, tomatoes, and corn to the pot.",
+            "Simmer for 20-30 minutes, stirring occasionally.",
+            "Season with salt and pepper to taste."
+          ]
+        },
+        {
+          "name": "Salmon with Asparagus",
+          "ingredients": [
+            "2 salmon fillets",
+            "1 bunch asparagus, trimmed",
+            "1 tbsp olive oil",
+            "1 lemon, sliced",
+            "1 tbsp garlic, minced",
+            "Salt and pepper"
+          ],
+          "instructions": [
+            "Preheat the oven to 400°F (200°C).",
+            "Place salmon fillets and asparagus on a baking sheet.",
+            "Drizzle with olive oil, and sprinkle with garlic, salt, and pepper.",
+            "Place lemon slices over salmon and asparagus.",
+            "Roast for 15-20 minutes or until salmon is cooked through."
+          ]
+        },
+        {
+          "name": "Pasta Primavera",
+          "ingredients": [
+            "200g pasta",
+            "1 bell pepper, sliced",
+            "1 zucchini, sliced",
+            "1 cup cherry tomatoes, halved",
+            "1/2 cup peas",
+            "2 tbsp olive oil",
+            "2 cloves garlic, minced",
+            "Parmesan cheese",
+            "Salt and pepper"
+          ],
+          "instructions": [
+            "Cook pasta according to package instructions.",
+            "In a large pan, heat olive oil and sauté garlic for 1 minute.",
+            "Add bell pepper, zucchini, tomatoes, and peas, and cook for 5-7 minutes.",
+            "Toss the cooked pasta with the vegetables.",
+            "Top with Parmesan cheese and season with salt and pepper."
+          ]
+        },
+        {
+          "name": "Eggplant Parmesan",
+          "ingredients": [
+            "2 eggplants, sliced",
+            "1 cup breadcrumbs",
+            "1 cup marinara sauce",
+            "1 cup mozzarella cheese, shredded",
+            "1/4 cup Parmesan cheese, grated",
+            "1 egg",
+            "Salt and pepper",
+            "Olive oil"
+          ],
+          "instructions": [
+            "Preheat the oven to 375°F (190°C).",
+            "Dip eggplant slices in egg, then breadcrumbs.",
+            "Arrange in a baking dish and bake for 20 minutes, flipping halfway.",
+            "Top eggplant with marinara sauce, mozzarella, and Parmesan.",
+            "Return to oven for 10 minutes or until cheese is melted."
+          ]
+        },
+        {
+          "name": "Chicken Fried Rice",
+          "ingredients": [
+            "2 chicken breasts, cooked and diced",
+            "2 cups cooked rice",
+            "1/2 cup peas and carrots",
+            "2 eggs, beaten",
+            "2 tbsp soy sauce",
+            "1 tbsp sesame oil",
+            "2 green onions, chopped",
+            "1 tbsp olive oil"
+          ],
+          "instructions": [
+            "Heat olive oil in a pan and scramble the eggs.",
+            "Add cooked chicken, peas, and carrots, and stir-fry for 5 minutes.",
+            "Add rice and soy sauce, and cook for another 5 minutes.",
+            "Stir in sesame oil and green onions."
+          ]
+        }
+      ]
