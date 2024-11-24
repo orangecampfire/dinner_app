@@ -31,12 +31,12 @@ class MainScreen extends StatefulWidget {
 }
 
 class MainScreenState extends State<MainScreen> {
-  String recipeTitle = "Press the button for a recipe!";
+  String recipeTitle = "Search for a recipe, or press the button for a random recipe";
   List<String> ingredients = [];
   List<String> instructions = [];
   final TextEditingController _searchController = TextEditingController();
   List<dynamic> allRecipes = [];
-  bool isSearching = false; // To toggle search bar visibility
+  List<dynamic> searchResults = []; // Store search results
 
   Future<void> loadRecipes() async {
     try {
@@ -44,6 +44,7 @@ class MainScreenState extends State<MainScreen> {
       final List<dynamic> recipes = jsonDecode(jsonString);
       setState(() {
         allRecipes = recipes;
+        searchResults = recipes; // Initialize with all recipes
       });
     } catch (error) {
       setState(() {
@@ -75,40 +76,26 @@ class MainScreenState extends State<MainScreen> {
     }
   }
 
-  Future<void> searchRecipe(String query) async {
-    try {
-      final searchResults = allRecipes.where((recipe) {
-        final name = recipe['name'].toLowerCase();
-        return name.contains(query.toLowerCase()); // Case-insensitive search
-      }).toList();
-
-      if (searchResults.isEmpty) {
-        setState(() {
-          recipeTitle = "No recipes found!";
-          ingredients = [];
-          instructions = [];
-        });
-      } else {
-        setState(() {
-          recipeTitle = searchResults[0]['name']; // Display the first result
-          ingredients = List<String>.from(searchResults[0]['ingredients']);
-          instructions = List<String>.from(searchResults[0]['instructions']);
-        });
-      }
-    } catch (error) {
-      setState(() {
-        recipeTitle = "Error loading recipe!";
-        ingredients = [];
-        instructions = [];
-      });
-      debugPrint("Error: $error");
-    }
-  }
-
   @override
   void initState() {
     super.initState();
     loadRecipes(); // Load all recipes when the app starts
+  }
+
+  // Method to handle searching
+  void searchRecipe(String query) {
+    if (query.isEmpty) {
+      setState(() {
+        searchResults = allRecipes; // Show all recipes if query is empty
+      });
+    } else {
+      setState(() {
+        searchResults = allRecipes.where((recipe) {
+          final name = recipe['name'].toLowerCase();
+          return name.contains(query.toLowerCase()); // Case-insensitive search
+        }).toList();
+      });
+    }
   }
 
   @override
@@ -117,42 +104,20 @@ class MainScreenState extends State<MainScreen> {
       appBar: AppBar(
         title: const Text('Dinner Ideas'),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.search),
-            onPressed: () {
-              setState(() {
-                isSearching = !isSearching; // Toggle search bar visibility
-              });
-            },
-          ),
-        ],
-        bottom: isSearching
-            ? PreferredSize(
-          preferredSize: Size.fromHeight(56.0),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextField(
-              controller: _searchController,
-              decoration: InputDecoration(
-                hintText: 'Search for a recipe...',
-                suffixIcon: IconButton(
-                  icon: const Icon(Icons.search),
-                  onPressed: () {
-                    searchRecipe(_searchController.text);
-                  },
-                ),
-              ),
-              onSubmitted: (query) {
-                searchRecipe(query);
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 16.0),
+            child: IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {
+                // Open search in a bottom sheet or other UI here
               },
             ),
           ),
-        )
-            : null, // Hide search bar when not searching
+        ],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: SingleChildScrollView(  // Make the body scrollable
+        child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -177,6 +142,44 @@ class MainScreenState extends State<MainScreen> {
                 ),
                 for (int i = 0; i < instructions.length; i++)
                   Text('${i + 1}. ${instructions[i]}', style: Theme.of(context).textTheme.bodyLarge),
+              ],
+
+              // Search bar
+              TextField(
+                controller: _searchController,
+                decoration: const InputDecoration(
+                  labelText: "Search Recipes",
+                  border: OutlineInputBorder(),
+                ),
+                onChanged: (query) {
+                  searchRecipe(query); // Call search function as user types
+                },
+              ),
+              const SizedBox(height: 16.0),
+
+              // Display search results
+              if (searchResults.isNotEmpty) ...[
+                Text(
+                  'Search Results:',
+                  style: Theme.of(context).textTheme.headlineMedium,
+                ),
+                ListView.builder(
+                  shrinkWrap: true,
+                  itemCount: searchResults.length,
+                  itemBuilder: (context, index) {
+                    final recipe = searchResults[index];
+                    return ListTile(
+                      title: Text(recipe['name']),
+                      onTap: () {
+                        setState(() {
+                          recipeTitle = recipe['name'];
+                          ingredients = List<String>.from(recipe['ingredients']);
+                          instructions = List<String>.from(recipe['instructions']);
+                        });
+                      },
+                    );
+                  },
+                ),
               ],
             ],
           ),
